@@ -12,6 +12,13 @@
 		CF070F892C2F8ADF0008D66B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF070F882C2F8ADF0008D66B /* Preview Assets.xcassets */; };
 		CF43884E2C3624C600D3DBE8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF43884D2C3624C600D3DBE8 /* SignInView.swift */; };
 		CF4388522C36290500D3DBE8 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4388512C36290500D3DBE8 /* LoadingButton.swift */; };
+		CF43886A2C39DD0F00D3DBE8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4388692C39DD0F00D3DBE8 /* LoginViewModel.swift */; };
+		CF43886C2C39DDD900D3DBE8 /* SignInViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF43886B2C39DDD900D3DBE8 /* SignInViewRouter.swift */; };
+		CF43886E2C39DE2F00D3DBE8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF43886D2C39DE2F00D3DBE8 /* SignUpView.swift */; };
+		CF4388722C39E03500D3DBE8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4388712C39E03500D3DBE8 /* SplashView.swift */; };
+		CF4388762C39E08600D3DBE8 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4388752C39E08600D3DBE8 /* SplashViewModel.swift */; };
+		CF4388792C39E0E100D3DBE8 /* SplashUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4388782C39E0E100D3DBE8 /* SplashUiState.swift */; };
+		CF43887B2C39E2FB00D3DBE8 /* SplashViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF43887A2C39E2FB00D3DBE8 /* SplashViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,13 @@
 		CF070F882C2F8ADF0008D66B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF43884D2C3624C600D3DBE8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		CF4388512C36290500D3DBE8 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		CF4388692C39DD0F00D3DBE8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CF43886B2C39DDD900D3DBE8 /* SignInViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewRouter.swift; sourceTree = "<group>"; };
+		CF43886D2C39DE2F00D3DBE8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CF4388712C39E03500D3DBE8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		CF4388752C39E08600D3DBE8 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		CF4388782C39E0E100D3DBE8 /* SplashUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUiState.swift; sourceTree = "<group>"; };
+		CF43887A2C39E2FB00D3DBE8 /* SplashViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +67,11 @@
 		CF070F802C2F8ADE0008D66B /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
-				CF43884F2C3628E900D3DBE8 /* Common */,
+				CF43887C2C39E7D300D3DBE8 /* Home */,
+				CF4388702C39E02400D3DBE8 /* Splash */,
 				CF4388492C3624A300D3DBE8 /* SignIn */,
+				CF43886F2C39DF3000D3DBE8 /* SignUp */,
+				CF43884F2C3628E900D3DBE8 /* Common */,
 				CF070F812C2F8ADE0008D66B /* InstagramCloneApp.swift */,
 				CF070F852C2F8ADF0008D66B /* Assets.xcassets */,
 				CF070F872C2F8ADF0008D66B /* Preview Content */,
@@ -91,6 +108,8 @@
 		CF43884B2C3624AE00D3DBE8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CF4388692C39DD0F00D3DBE8 /* LoginViewModel.swift */,
+				CF43886B2C39DDD900D3DBE8 /* SignInViewRouter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -116,6 +135,80 @@
 				CF4388512C36290500D3DBE8 /* LoadingButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CF43886F2C39DF3000D3DBE8 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CF43886D2C39DE2F00D3DBE8 /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CF4388702C39E02400D3DBE8 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				CF4388772C39E0B900D3DBE8 /* Model */,
+				CF4388742C39E07800D3DBE8 /* ViewModel */,
+				CF4388732C39E06E00D3DBE8 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		CF4388732C39E06E00D3DBE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF4388712C39E03500D3DBE8 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF4388742C39E07800D3DBE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4388752C39E08600D3DBE8 /* SplashViewModel.swift */,
+				CF43887A2C39E2FB00D3DBE8 /* SplashViewRouter.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF4388772C39E0B900D3DBE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF4388782C39E0E100D3DBE8 /* SplashUiState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF43887C2C39E7D300D3DBE8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CF43887F2C39E80300D3DBE8 /* Model */,
+				CF43887E2C39E7FE00D3DBE8 /* ViewModel */,
+				CF43887D2C39E7F800D3DBE8 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CF43887D2C39E7F800D3DBE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF43887E2C39E7FE00D3DBE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF43887F2C39E80300D3DBE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,9 +281,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF43886A2C39DD0F00D3DBE8 /* LoginViewModel.swift in Sources */,
+				CF43886C2C39DDD900D3DBE8 /* SignInViewRouter.swift in Sources */,
+				CF43887B2C39E2FB00D3DBE8 /* SplashViewRouter.swift in Sources */,
 				CF4388522C36290500D3DBE8 /* LoadingButton.swift in Sources */,
 				CF43884E2C3624C600D3DBE8 /* SignInView.swift in Sources */,
+				CF43886E2C39DE2F00D3DBE8 /* SignUpView.swift in Sources */,
 				CF070F822C2F8ADE0008D66B /* InstagramCloneApp.swift in Sources */,
+				CF4388722C39E03500D3DBE8 /* SplashView.swift in Sources */,
+				CF4388762C39E08600D3DBE8 /* SplashViewModel.swift in Sources */,
+				CF4388792C39E0E100D3DBE8 /* SplashUiState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
